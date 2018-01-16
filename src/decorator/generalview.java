@@ -79,7 +79,7 @@ class CrossingDecorator extends DisplayDecorator{
 	}
 }
 
-// 인자를 통해 추가 기능을 동적으로 생성하는 코드
+// 인자를 통해 명시된 추가기능을 동적으로 생성
 class User{
 	public static void main(String[] args){
 		Display road = new RoadDisplay();
@@ -98,6 +98,6 @@ class User{
 
 /*
 Display roadWithTrafficAndCrossingAndLane = new LaneDecorator(
-		new CrossingDecorator(new TrafficDecorator(new RoadDisplay())));
-roadWithTrafficAndCrossingAndLane.draw();
-*/
+				new CrossingDecorator(new TrafficDecorator(new RoadDisplay())));
+		roadWithTrafficAndCrossingAndLane.draw();
+ */
